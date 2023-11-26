@@ -1,1 +1,6 @@
 node_modules
+.env*
+sampledata.json
+.DS_Store
+app_error.log
+.vscode

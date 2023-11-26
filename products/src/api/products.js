@@ -7,7 +7,7 @@ module.exports = (app) => {
 
   app.post("/product/create", async (req, res, next) => {
     try {
-      const { name, desc, type, unit, price, available, suplier, banner } =
+      const { name, desc, type, unit, price, available, supplier, banner } =
         req.body;
       // validation
       const { data } = await service.CreateProduct({
@@ -17,7 +17,7 @@ module.exports = (app) => {
         unit,
         price,
         available,
-        suplier,
+        supplier,
         banner,
       });
       return res.json(data);
